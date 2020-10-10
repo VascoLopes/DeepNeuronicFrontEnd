@@ -47,6 +47,9 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<!-- Required for Some awesome icons -->
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 	</head>
 	<body>
 		
@@ -60,25 +63,21 @@
 						<div class="col-md-2">
 							<div id="colorlib-logo"><a href="index.html">DeepNeuronic</a></div>
 						</div>
-						<!--
+
+
+
 						<div class="col-md-10 text-right menu-1">
 							<ul>
-								<li class="active"><a href="index.html">Home</a></li>
-								<li class="has-dropdown">
-									<a href="work.html">Works</a>
-									<ul class="dropdown">
-										<li><a href="work-grid.html">Works grid with text</a></li>
-										<li><a href="work-grid-without-text.html">Works grid w/o text</a></li>
-									</ul>
-								</li>
-								<li><a href="services.html">Services</a></li>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="shop.html">Shop</a></li>
-								<li><a href="contact.html">Contact</a></li>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="index.html#what">What</a></li>
+								<li><a href="index.html#problem">Problem</a></li>
+								<li><a href="index.html#mission">Mission</a></li>
+								<li><a href="index.html#market">Target Market</a></li>
+								<li><a href="index.html#team">Team</a></li>
+								<li><a href="index.html#news">Awards&News</a></li>
+								<li><a href="index.html#contact">Contact</a></li>
 							</ul>
 						</div>
-						-->
 					</div>
 				</div>
 			</div>
@@ -143,11 +142,62 @@
 						<p>An analytics framework powered by Machine Learning algorithms to conduct real-time analysis of images to detect threatening and abnormal activities.</p>
 					</div>
 				</div>
-				<!--<div class="row">
-					<div class="col-md-12 animate-box">
-						<span class="play"><a href="https://vimeo.com/channels/staffpicks/93951774" class="pulse popup-vimeo"><i class="icon-play3"></i></a></span>
+				<div class="row">
+					<div class="col-md-5ths text-center animate-box">
+						<div class="popup" onclick="myFunction()">
+							<span class="play"><a class="pulse popup-vimeo"><i class='fas fa-car-crash' style='font-size:24px'></i></a>
+					  			<span class="popuptext" id="myPopup">Accidents
+					  			<img class="img-responsive" src="images/accident.jpg" alt="">
+					  			</span>
+					  		</span>
+						</div>
+
+						<!--
+						<div class="popup" onclick="myFunction()">Click me!
+						  <span class="popuptext" id="myPopup">Popup text...
+						  <span class="play"><a class="pulse popup-vimeo"><i class="icon-telescope"></i></a></span>
+						</div>
+						-->
 					</div>
-				</div>-->
+					<div class="col-md-5ths text-center animate-box">
+						<div class="popup" onclick="myFunction2()">
+							<span class="play"><a class="pulse popup-vimeo"><i class='fas fa-fire-alt' style='font-size:24px'></i></a>
+					  			<span class="popuptext" id="myPopup2">Arson
+								<img class="img-responsive" src="images/arson.jpg" alt="">
+					  			</span>
+					  		</span>
+						</div>
+					</div>
+					<div class="col-md-5ths text-center animate-box">
+						<div class="popup" onclick="myFunction3()">
+							<span class="play"><a class="pulse popup-vimeo"><i class='fas fa-person-booth' style='font-size:24px'></i></a>
+					  			<span class="popuptext" id="myPopup3">Burglary
+									<img class="img-responsive" src="images/burglary.jpg" alt="">
+					  			</span>
+					  		</span>
+						</div>
+					</div>
+					<div class="col-md-5ths text-center animate-box">
+						<div class="popup" onclick="myFunction4()">
+							<span class="play"><a class="pulse popup-vimeo"><i class='fas fa-people-arrows' style='font-size:24px'></i></a>
+					  			<span class="popuptext" id="myPopup4">Fights
+					  				<img class="img-responsive" src="images/fight.jpg" alt="">
+					  			</span>
+					  		</span>
+						</div>
+					</div>
+					<div class="col-md-5ths text-center animate-box">
+						<div class="popup" onclick="myFunction5()">
+							<span class="play"><a class="pulse popup-vimeo"><i class='fas fa-user-secret' style='font-size:24px'></i></a>
+					  			<span class="popuptext" id="myPopup5">ShopLifting
+					  				<img class="img-responsive" src="images/shop.jpg" alt="">
+					  			</span>
+					  		</span>
+						</div>
+					</div>
+					<h2 style="font-size:100px"><br></h2>
+					<p style="font-size:35px"><br></p>
+				</div>
 			</div>
 		</div>
 
@@ -195,6 +245,7 @@
 
 
 		<!-- Product/Services -->
+		<!--
 		<div class="colorlib-work-featured colorlib-bg-white">
 			<div class="container">
 				<div class="row mobile-wrap">
@@ -226,7 +277,7 @@
 						</div>
 					</div>
 				</div>
-				<!--
+				
 				<div class="row mobile-wrap">
 					<div class="col-md-5 col-md-push-7 animate-box">
 						<div class="mobile-img" style="background-image: url(images/mobile-1.jpg);"></div>
@@ -261,7 +312,9 @@
 		</div>
 
 
-		<div class="colorlib-about">
+		<!--  Team -->
+		<section id="team" data-section="team">
+		<div class="colorlib-intro colorlib-bg-white">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center colorlib-heading animate-box">
@@ -270,11 +323,11 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-3 text-center animate-box">
+					<div class="col-md-5ths text-center animate-box">
 						<div class="staff-entry">
 							<a class="staff-img" style="background-image: url(images/vasco.jpg);"></a>
 								<div class="desc">
-									<h3>Vasco Lopes</h3>
+									<h3 style="font-size:20px">Vasco Lopes</h3>
 									<span>CEO</span>
 									<p></p>
 								</div>
@@ -285,11 +338,11 @@
 							</p>
 							</div>
 					</div>
-					<div class="col-md-3 text-center animate-box">
+					<div class="col-md-5ths text-center animate-box">
 						<div class="staff-entry">
 							<a class="staff-img" style="background-image: url(images/bruno.jpeg);"></a>
 							<div class="desc">
-								<h3>Bruno Degardin</h3>
+								<h3 style="font-size:20px">Bruno Degardin</h3>
 								<span>CTO</span>
 								<p></p>
 								<p>
@@ -300,11 +353,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 text-center animate-box">
+					<div class="col-md-5ths text-center animate-box">
 						<div class="staff-entry">
 							<a class="staff-img" style="background-image: url(images/Gaspar.jpg);"></a>
 							<div class="desc">
-								<h3>Gaspar Ramôa</h3>
+								<h3 style="font-size:20px">Gaspar Ramôa</h3>
 								<span>Principal Engineer</span>
 								<p></p>
 								<p>
@@ -315,26 +368,26 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 text-center animate-box">
+					<div class="col-md-5ths text-center animate-box">
 						<div class="staff-entry">
 							<a class="staff-img" style="background-image: url(images/nuno.png);"></a>
 							<div class="desc">
-								<h3>Nuno Pereira</h3>
+								<h3 style="font-size:20px">Nuno Pereira</h3>
 								<span>Principal Engineer</span>
 								<p></p>
 								<p>
 									<ul class="colorlib-social-icons">
-										<li><a href="https://www.linkedin.com/in/nuno-pereira-9851211b5/"><i class="icon-linkedin"></i></a></li>
+										<li><a href="#"><i class="icon-linkedin"></i></a></li>
 									</ul>
 								</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 text-center animate-box">
+					<div class="col-md-5ths text-center animate-box">
 						<div class="staff-entry">
 							<a class="staff-img" style="background-image: url(images/vitor.jpg);"></a>
 							<div class="desc">
-								<h3>Vitor Crespo</h3>
+								<h3 style="font-size:20px">Vitor Crespo</h3>
 								<span>CSO</span>
 								<p></p>
 								<p>
@@ -346,9 +399,9 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
+		</section>
 
 		<!-- algumas metricas -->
 		<!--
@@ -503,6 +556,30 @@
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<!-- PopUps -->
+	<script>
+	// When the user clicks on <div>, open the popup
+		function myFunction() {
+		  var popup = document.getElementById("myPopup");
+		  popup.classList.toggle("show");
+		}
+		function myFunction2() {
+		  var popup = document.getElementById("myPopup2");
+		  popup.classList.toggle("show");
+		}
+		function myFunction3() {
+		  var popup = document.getElementById("myPopup3");
+		  popup.classList.toggle("show");
+		}
+		function myFunction4() {
+		  var popup = document.getElementById("myPopup4");
+		  popup.classList.toggle("show");
+		}
+		function myFunction5() {
+		  var popup = document.getElementById("myPopup5");
+		  popup.classList.toggle("show");
+		}
+	</script>
 
 	</body>
 </html>
